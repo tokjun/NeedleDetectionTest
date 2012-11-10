@@ -278,12 +278,9 @@ class NeedleDetectionTestTest(unittest.TestCase):
 
       parameters['sigma1'] = 0.5
       parameters['minsigma'] = 0.5
-      #parameters['maxsigma'] = 1.3
-      #parameters['stepsigma'] = 5
-      #parameters['minlinemeasure'] = 10
-      parameters['maxsigma'] = 1.0
-      parameters['stepsigma'] = 6
-      parameters['minlinemeasure'] = 10
+      parameters['maxsigma'] = 1.3
+      parameters['stepsigma'] = 5
+      parameters['minlinemeasure'] = 40
       parameters['alpha1'] = 0.5
       parameters['alpha2'] = 2
       parameters['anglethreshold'] = 25
@@ -291,7 +288,6 @@ class NeedleDetectionTestTest(unittest.TestCase):
       parameters['numberOfBins'] = 128
       parameters['minimumObjectSize'] = 50
       parameters['minPrincipalAxisLength'] = 50
-      parameters['maxMinorAxisLength'] = 3
       parameters['closestPoint'] = [0.0, 0.0, 0.0]
 
       nd = slicer.modules.needledetection
